@@ -1,0 +1,37 @@
+let xb=300//posição x da bolinha//
+let yb=200//posição y da bolinha//
+let dian=25//tamanho da bolinha//
+let raio=dian/2
+
+//velocidades
+let vx=5
+let vy=5
+
+
+function setup() {
+  createCanvas(600, 400);
+}
+
+function draw() {
+  background( "pink");
+  aparecerbolinha()
+  movimentar()
+  sebatervolte()
+}
+
+function aparecerbolinha() {
+  fill("white")
+  circle(xb,yb,dian)
+}
+
+function movimentar() {
+  xb+=vx
+  yb+=vy
+
+}
+
+function sebatervolte() {
+if(xb>witdh||xb<0)
+vx*=-1
+
+}
